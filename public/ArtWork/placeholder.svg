@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#1e1b4b"/>
+  <rect x="1" y="1" width="398" height="298" fill="none" stroke="#7c3aed" stroke-opacity="0.35"/>
+  <text x="200" y="155" fill="#c4b5fd" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle">Drop images in public/ArtWork/</text>
+</svg>
