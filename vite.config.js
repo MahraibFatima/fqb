@@ -13,16 +13,18 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vendor': ['react', 'react-router-dom'],
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-router-dom')) {
+              return 'vendor';
+            }
+          }
         }
       }
     },
-    // Optimize images during build
     assetsDir: 'assets',
   },
   optimizeDeps: {
-    include: ['react', 'react-router-dom', 'react-router-dom'],
+    include: ['react', 'react-router-dom'],
   }
 })
-
